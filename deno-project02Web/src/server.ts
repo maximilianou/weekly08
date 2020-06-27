@@ -4,6 +4,7 @@ const port = 4600;
 const app = new Application();
 
 app.use( (ctx) => {
+  console.log(`HTTP ${ctx.request.method} on ${ctx.request.url}`);
   ctx.response.body = 'Starting Deno Learning Project! ';
 });
 

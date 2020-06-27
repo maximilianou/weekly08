@@ -2,6 +2,11 @@
 
 start with deno
 
+```
+git config --global core.editor vi
+
+```
+
 Makefile
 ```
 start:

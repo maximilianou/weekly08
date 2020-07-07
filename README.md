@@ -1,5 +1,9 @@
 # weekly08
 
+Reference:
+
+https://www.robinwieruch.de/deno-tutorial
+
 start with deno
 
 ```

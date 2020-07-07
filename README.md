@@ -4,6 +4,10 @@ Reference:
 
 https://www.robinwieruch.de/deno-tutorial
 
+curl -fsSL https://deno.land/x/install/install.sh | sh
+
+
+
 start with deno
 
 ```

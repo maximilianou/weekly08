@@ -9,3 +9,5 @@ web03:
 	cd denoweb03 && deno run --allow-net src/server.ts
 web04: 
 	cd denoweb04 && deno run --allow-net src/server.ts
+web05: 
+	cd denoweb05 && deno run --allow-net src/server.ts

@@ -13,3 +13,5 @@ web05:
 	cd denoweb05 && deno run --allow-net src/server.ts
 web06: 
 	cd denoweb06 && deno run --allow-net src/server.ts
+web07: 
+	cd denoweb07 && deno test 

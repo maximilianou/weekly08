@@ -1,4 +1,4 @@
-import { assertEquals } from 'https://deno.land/std/testing/asserts.ts';
+import { assertEquals } from 'https://deno.land/std@0.60.0/testing/asserts.ts';
 
 import { mapStory } from './stories.js';
 
@@ -9,7 +9,7 @@ Deno.test('maps to a smaller story  with formatted date', () => {
      id: '1',
      title: 'title1',   
      url: 'url1',
-     created_at_id: 1476198038,
+     created_at_i: 1476198038,
   }
   ];
   

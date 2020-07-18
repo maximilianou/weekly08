@@ -19,3 +19,5 @@ web08:
 	cd denoweb08 && deno run --allow-net src/server.ts
 web09: 
 	cd denoweb09 && deno run --allow-net --allow-read src/server.ts
+web11: 
+	cd denoweb11 && deno run --allow-net --allow-read src/server.ts

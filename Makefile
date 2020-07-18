@@ -47,3 +47,9 @@ put16:
 	curl -X PUT http://localhost:4607/users 
 delete16:
 	curl -X DELETE http://localhost:4607/users 
+web17: 
+	cd denoweb17 && deno run --allow-net --allow-read src/server.ts 
+put17: 
+	curl -X PUT http://localhost:4608/users/123
+delete17:
+	curl -X DELETE http://localhost:4608/users/123 

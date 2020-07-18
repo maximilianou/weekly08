@@ -1,13 +1,15 @@
-import { Application } from 'https://deno.land/x/oak/mod.ts';
+import { Application, Context } from 'https://deno.land/x/oak/mod.ts';
 
-const port = 4602;
+const port = 4603;
 
 const app = new Application();
 
-app.use( async (ctx, next) => {
+const logging = async (ctx: Context, next: Function) => {
   console.debug(`${new Date()}::HTTP:: ${ctx.request.method} on ${ctx.request.url}!`);
   await next();
-});
+};
+
+app.use(logging);
 
 app.use( (ctx) => {
   console.debug(`${new Date()}::Returninig the Web Page:`);

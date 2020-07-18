@@ -39,3 +39,11 @@ delete15:
 	curl -X DELETE http://localhost:4606 
 web16: 
 	cd denoweb16 && deno run --allow-net --allow-read src/server.ts 
+get16: 
+	curl http://localhost:4607/users
+post16:
+	curl -X POST http://localhost:4607/users 
+put16: 
+	curl -X PUT http://localhost:4607/users 
+delete16:
+	curl -X DELETE http://localhost:4607/users 

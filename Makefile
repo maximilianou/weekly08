@@ -27,3 +27,13 @@ web13:
 	cd denoweb13 && deno run --allow-net --allow-read src/server.ts
 web14: 
 	cd denoweb14 && deno run --allow-net --allow-read src/server.ts
+web15: 
+	cd denoweb15 && deno run --allow-net --allow-read src/server.ts 
+get15: 
+	curl http://localhost:4606 
+post15:
+	curl -X POST http://localhost:4606 
+put15: 
+	curl -X PUT http://localhost:4606 
+delete15:
+	curl -X DELETE http://localhost:4606 

@@ -53,3 +53,15 @@ put17:
 	curl -X PUT http://localhost:4608/users/123
 delete17:
 	curl -X DELETE http://localhost:4608/users/123 
+web18: 
+	cd denoweb18 && deno run --allow-net --allow-read src/server.ts 
+web19: 
+	cd denoweb19 && deno run --allow-net --allow-read src/server.ts 
+post19:
+	curl -X POST -H "Content-Type:application/json" http://localhost:4619/messages -d '{ "text":"Hi Family" }'
+web20: 
+	cd denoweb20 && deno run --allow-net --allow-read src/server.ts 
+post20:
+	curl -X POST -H "Content-Type:application/json" http://localhost:4620/messages -d '{ "text":"Hi Family!!" }'
+get20:
+	curl http://localhost:4620/messages 

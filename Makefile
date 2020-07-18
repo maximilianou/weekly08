@@ -37,3 +37,5 @@ put15:
 	curl -X PUT http://localhost:4606 
 delete15:
 	curl -X DELETE http://localhost:4606 
+web16: 
+	cd denoweb16 && deno run --allow-net --allow-read src/server.ts 
